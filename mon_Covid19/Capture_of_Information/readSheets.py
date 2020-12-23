@@ -47,7 +47,7 @@ for i in aux2:
         if string == "[":
             string = ''
             continue
-        cases.append(int(float(string)))
+        cases.append(float(string))
         string = ''
         continue
     if i == ']':
