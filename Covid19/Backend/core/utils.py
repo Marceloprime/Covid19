@@ -24,10 +24,9 @@ for x in datas:
 
 
 fig, ax = plt.subplots()
-ax.barh( Date[-30:-1], Cases[-30:-1])
-labels = ax.get_xticklabels()
-ax.set(xlim=[0, 5_000_000], xlabel='Casos', ylabel='Dias',
-       title='Covid-19 iin São Paulo')
-plt.setp(labels, rotation=45, horizontalalignment='right')
+print(range(len(Cases)))
+ax.plot( Date[-10:-1], Cases[-10:-1],lw=2)
+#labels = ax.get_xticklabels()
+#x.set( xlabel='Casos', ylabel='Dias',title='Covid-19 in São Paulo')
 plt.show()
 os.remove("sao_paulo.csv")
