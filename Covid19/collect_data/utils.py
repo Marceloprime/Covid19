@@ -24,9 +24,8 @@ for x in datas:
 
 
 fig, ax = plt.subplots()
-print(range(len(Cases)))
-ax.plot( Date[-10:-1], Cases[-10:-1],lw=2)
-#labels = ax.get_xticklabels()
-#x.set( xlabel='Casos', ylabel='Dias',title='Covid-19 in São Paulo')
+vector = np.array(range(0, 426))
+ax.plot( vector, Cases,lw=2, marker='o', linestyle='dotted')
+ax.set( xlabel='Casos', ylabel='Dias',title='Covid-19 in São Paulo')
 plt.show()
 os.remove("sao_paulo.csv")

@@ -1,0 +1,2 @@
+Desevolvimento de aplicações usando machine learning e Data Science para analisar dados 
+do covid.
